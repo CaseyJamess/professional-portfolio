@@ -7,10 +7,10 @@ const Home = () => {
   return (
     <div
       name="home"
-      className="min-h-screen w-full bg-gradient-to-b from-neutral-950 to-gray-800 text-slate-50 flex flex-col justify-center items-center"
+      className="min-h-screen w-full bg-gradient-to-b from-neutral-950 to-gray-800 text-slate-50 flex flex-col justify-center items-center overflow-y-auto"
     >
-      <div className=" px-4 flex flex-col md:flex-row items-center sm:items-start justify-center">
-        <div className="flex flex-col justify-center items-start  max-w-sm lg:max-w-lg mt-10 sm:mt-0">
+      <div className="px-4 mt-10 flex flex-col sm:flex-row items-center sm:items-start justify-center">
+        <div className="flex flex-col justify-center items-start max-w-sm lg:max-w-lg mt-10 sm:mt-0">
           <h2 className="text-3xl md:text-4xl lg:text-6xl font-bold mb-4">
             I'm a Software Developer!
           </h2>
@@ -37,11 +37,11 @@ const Home = () => {
           </div>
         </div>
 
-        <div>
+        <div className="flex justify-center">
           <img
             src={ProfilePic}
             alt="profile"
-            className="flex rounded-2xl w-44 sm:w-64 lg:w-72 xl:w-80 mx-10 my-12 md:my-auto justify-center"
+            className="flex rounded-2xl w-44 md:w-56 lg:w-72 xl:w-80 mx-10 my-12 md:my-0"
           />
         </div>
       </div>

@@ -13,7 +13,7 @@ const Interests = () => {
             Interests
           </p>
         </div>
-        <div className="text-justify items-center text-xs md:text-sm xl:text-base">
+        <div className="text-justify items-center text-sm  xl:text-base">
           <p className="my-3">
             Self-care and maintaining a healthy mind-body connection are
             essential aspects of my life. Regular exercise not only keeps me

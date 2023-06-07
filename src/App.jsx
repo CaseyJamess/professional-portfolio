@@ -7,10 +7,12 @@ import Interests from "./components/interests.jsx";
 import Contact from "./components/contact.jsx";
 import Experience from "./components/experience.jsx";
 
+
 function App() {
   return (
     <div>
       <Navbar />
+      <div className="overflow-y-scroll overflow-x-scroll">
       <Home />
       <Socials />
       <About />
@@ -18,6 +20,7 @@ function App() {
       <Experience />
       <Interests />
       <Contact />
+    </div>
     </div>
   );
 }

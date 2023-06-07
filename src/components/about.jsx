@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div
       name="about"
-      className="min-h-screen w-full flex bg-gradient-to-b from-neutral-950 to-gray-800 text-slate-50 justify-center items-center"
+      className="min-h-screen w-full flex bg-gradient-to-b from-neutral-950 to-gray-800 text-slate-50 justify-center items-center overflow-y-scroll"
     >
       <div className="flex flex-col p-4 justify-center text-justify max-w-screen-lg mx-auto h-full">
         <div className="pb-4 mt-5 md:mt-10">
@@ -13,7 +13,7 @@ const About = () => {
           </h2>
         </div>
         <div className=" text-xs sm:text-base">
-          <div className="justify-center items-center text-justify text-xs md:text-base lg:text-base ">
+          <div className="justify-center items-center text-justify text-sm md:text-base lg:text-base ">
             <p className="mb-4 mt-2">
               I'm Casey, a software developer with a background in Electronic
               Engineering. Graduating with a first-class BEng degree, I have

@@ -10,7 +10,6 @@ function Navbar() {
       id: 0,
       link: "home",
     },
-
     {
       id: 1,
       link: "about",
@@ -19,29 +18,27 @@ function Navbar() {
       id: 2,
       link: "portfolio",
     },
-
     {
       id: 3,
       link: "experience",
     },
-
     {
       id: 4,
       link: "interests",
     },
-
     {
       id: 5,
       link: "contact",
     },
   ];
+
   return (
-    <nav className="bg-neutral-950 z-10 flex justify-between my-auto items-center w-full h-10 py-2 sm:h-16 sm:px-4 text-slate-50 fixed">
+    <nav className="bg-neutral-950 z-10 flex justify-between my-auto items-center w-full h-8 py-2 md:h-16 sm:px-4 text-slate-50 fixed">
       <div className="text-lg font-signature font-bold ml-2 sm:text-2xl lg:text-4xl">
         Casey McArdle
       </div>
 
-      <ul className="text-gray-300 text-base mr-16 hidden md:flex ">
+      <ul className="text-gray-300 text-base mr-16 hidden md:flex">
         {links.map(({ id, link }) => (
           <li
             key={id}
