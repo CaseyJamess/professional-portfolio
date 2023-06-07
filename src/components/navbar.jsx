@@ -36,8 +36,8 @@ function Navbar() {
     },
   ];
   return (
-    <nav className="bg-neutral-950 z-10 flex justify-between items-center w-full h-10 py-2 sm:h-20 sm:px-4 text-slate-50 fixed">
-      <div className="text-xl font-signature font-bold ml-2 sm:text-4xl">
+    <nav className="bg-neutral-950 z-10 flex justify-between my-auto items-center w-full h-10 py-2 sm:h-16 sm:px-4 text-slate-50 fixed">
+      <div className="text-lg font-signature font-bold ml-2 sm:text-2xl lg:text-4xl">
         Casey McArdle
       </div>
 
@@ -62,11 +62,11 @@ function Navbar() {
       </div>
 
       {menu && (
-        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-neutral-950 to-gray-800 text-slate-50">
+        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen  bg-gradient-to-b from-neutral-950 to-gray-800 text-slate-50">
           {links.map(({ id, link }) => (
             <li
               key={id}
-              className="cursor-pointer px-3 py-3 capitalize text-4xl hover:text-yellow-400 hover:scale-105 duration-200"
+              className="cursor-pointer px-3 py-2 capitalize text-3xl hover:text-yellow-400 hover:scale-105 duration-200"
             >
               <Link
                 onClick={() => setMenu(!menu)}

@@ -7,27 +7,27 @@ const Home = () => {
   return (
     <div
       name="home"
-      className="h-screen w-full bg-gradient-to-b from-neutral-950 to-gray-800 text-slate-50 "
+      className="min-h-screen w-full bg-gradient-to-b from-neutral-950 to-gray-800 text-slate-50 flex flex-col justify-center items-center"
     >
-      <div className="max-w-screen-lg mx-auto px-auto flex flex-col items-center justify-center h-full px-4 md:flex-row ">
-        <div className="flex flex-col justify-center items-start h-full mt-10 sm:mt-0">
-          <h2 className="max-w-md text-4xl lg:text-6xl font-bold">
+      <div className=" px-4 flex flex-col md:flex-row items-center sm:items-start justify-center">
+        <div className="flex flex-col justify-center items-start  max-w-sm lg:max-w-lg mt-10 sm:mt-0">
+          <h2 className="text-3xl md:text-4xl lg:text-6xl font-bold mb-4">
             I'm a Software Developer!
           </h2>
-          <h5 className="italic text-md my-4 md:text-base mb-4 ">
+          <h5 className="italic text-md md:text-base mb-4 text-center">
             but sadly my dog isn't...
           </h5>
-          <div className="my-2 max-w-md text-xs md:text-base text-justify">
-            I have three years of experience building & design software.
-            Currently I love to work on web development, utilising technologies
-            such as React & Tailwind CSS
+          <div className="text-xs md:text-base mx-auto text-justify mb-4">
+            I have three years of experience building & designing software.
+            Currently, I love to work on web development, utilizing technologies
+            such as React & Tailwind CSS.
           </div>
           <div>
             <Link
               to="portfolio"
               smooth
               duration={500}
-              className="group text-slate-50 w-fit my-3 py-2 px-2 sm:px-6 sm:py-3 sm:my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer"
+              className="group text-slate-50 w-fit my-3 py-2 px-4 md:px-6 sm:py-3 sm:my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-600 cursor-pointer"
             >
               Portfolio
               <span className="group-hover:rotate-90 duration-200">
@@ -41,7 +41,7 @@ const Home = () => {
           <img
             src={ProfilePic}
             alt="profile"
-            className="rounded-2xl w-9/12 sm:w-10/12 mx-auto my-auto mb-10 sm:mb-auto md:mt-20 lg:mt-22"
+            className="flex rounded-2xl w-44 sm:w-64 lg:w-72 xl:w-80 mx-10 my-12 md:my-auto justify-center"
           />
         </div>
       </div>

@@ -39,7 +39,7 @@ const links = [
         Resume <BsFillPersonLinesFill size={30} />
       </>
     ),
-    href: "../public/CaseyMcArdleCV.pdf",
+    href: "../dist/CV.pdf",
     style: "rounded-br-md",
     download: true,
   },

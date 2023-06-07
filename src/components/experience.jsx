@@ -1,5 +1,20 @@
 import React from "react";
 
+/*
+import javascript from "../dist/assets/javascript-d04a05c4.png";
+import html from "../dist/assets/html-d20c9482.png";
+import css from "../dist/assets/css-4040bdba.png";
+import reactImage from "../dist/assets/react-e00184ba.png";
+import tailwind from "../dist/assets/tailwind-47f3710a.png";
+import cPlus from "../dist/assets/c__-de1dfa76.png";
+import node from "../dist/assets/node-f467a70a.png";
+import electron from "../dist/assets/electron-57b47128.png";
+import bootstrap from "../dist/assets/bootstrap-e857e3f1.png";
+import jQuery from "../dist/assets/jquery-7a65e3a2.png";
+import figma from "../dist/assets/figma-8e8a52fb.png";
+import github from "../dist/assets/github-e59bf158.png";
+*/
+
 import javascript from "../assets/javascript.png";
 import html from "../assets/html.png";
 import css from "../assets/css.png";
@@ -12,6 +27,7 @@ import bootstrap from "../assets/bootstrap.png";
 import jQuery from "../assets/jquery.png";
 import figma from "../assets/figma.png";
 import github from "../assets/github.png";
+
 
 const Experience = () => {
   const techs = [
@@ -94,11 +110,11 @@ const Experience = () => {
   return (
     <div
       id="experience"
-      className="h-screen w-full bg-gradient-to-b from-neutral-950 to-gray-800 text-slate-50"
+      className="min-h-screen w-full flex bg-gradient-to-b from-neutral-950 to-gray-800 text-slate-50 justify-center items-center"
     >
-      <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full">
-        <div className="mt-0 sm:mt-4 md:mt-6 ">
-          <p className="text-2xl sm:text-4xl font-bold inline border-b-4 mb-4 border-slate-50">
+      <div className="max-w-screen-lg px-4 flex flex-col justify-center w-full h-full">
+        <div className="mt-0 sm:mt-4 md:mt-6">
+          <p className="text-2xl sm:text-4xl font-bold  inline border-b-4 mb-4 border-slate-50">
             Experience
           </p>
         </div>
@@ -106,14 +122,14 @@ const Experience = () => {
           These are the technologies that I have worked with in my career:
         </p>
 
-        <div className="w-full mt-2 grid grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 text-center px-12 sm:px-0">
+        <div className="w-full mt-2 grid grid-cols-2 sm:grid-cols-3 gap-6 sm:gap-8 text-center px-12 sm:px-0">
           {techs.map(({ id, title, src, style }) => (
             <div
               key={id}
               className={`shadow-md hover:scale-105 duration-500 py-0 rounded-lg ${style} sm:py-2`}
             >
-              <img src={src} alt={title} className="w-8 mx-auto xl:w-19" />
-              <p className="mt-4 font-medium text-xs sm:text-base">{title}</p>
+              <img src={src} alt={title} className="w-10 mx-auto xl:w-19" />
+              <p className="mt-1 sm:mt-4 font-medium text-xs sm:text-base">{title}</p>
             </div>
           ))}
         </div>
