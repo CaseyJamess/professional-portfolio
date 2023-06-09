@@ -41,7 +41,7 @@ const Home = () => {
           <img
             src={ProfilePic}
             alt="profile"
-            className="flex rounded-2xl w-44 md:w-56 lg:w-72 xl:w-80 mx-10 my-12 md:my-0"
+            className="flex rounded-2xl w-48 md:w-56 lg:w-72 xl:w-80 mx-10 my-12 md:my-0"
           />
         </div>
       </div>

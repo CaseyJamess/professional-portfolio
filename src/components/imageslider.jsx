@@ -9,7 +9,7 @@ import turfImage from "../assets/turfmoor.jpg";
 import charityimage from "../assets/charity.jpg";
 import travelImage from "../assets/travel.jpg";
 
-const Interests = () => {
+const ImageSlider = () => {
   const images = [
     {
       id: 0,
@@ -29,7 +29,7 @@ const Interests = () => {
         <p>
           Skiing provides an exhilarating rush and sparks profound
           contemplation. Gliding down snowy slopes surrounded by nature fuels
-          introspection and gives fresh perspectives on life
+          introspection and philosophy
         </p>
       ),
     },
@@ -60,8 +60,8 @@ const Interests = () => {
       src: charityimage,
       text: (
         <p>
-          Recognising the privilege I have, I actively support organiations like
-          the{" "}
+          Recognizing the privilege I have, I actively support organizations
+          like the{" "}
           <a
             href="https://www.innocenceproject.org"
             target="_blank"
@@ -70,7 +70,7 @@ const Interests = () => {
           >
             Innocence Project
           </a>{" "}
-          and the{" "}
+          and{" "}
           <a
             href="https://www.worldwildlife.org"
             target="_blank"
@@ -79,7 +79,7 @@ const Interests = () => {
           >
             WWF
           </a>{" "}
-          , to contribute to important causes and make a positive impact in the
+          to contribute to important causes and make a positive impact in the
           pursuit of justice and the preservation of our planet's biodiversity
         </p>
       ),
@@ -89,9 +89,11 @@ const Interests = () => {
       src: travelImage,
       text: (
         <p>
-          I have a passion for exploring the world, embracing diverse cultures,
-          and gaining new perspectives through travel. It has broadened my
-          horizons and instilled a deep appreciation for the beauty of our world
+          Alongside my personal pursuits, I possess a deep desire to explore the
+          world, embrace diverse cultures, and broaden my horizons. I have been
+          fortunate to visit captivating destinations that have enriched my
+          perspective and instilled a sense of wonder and appreciation for the
+          beauty of our world
         </p>
       ),
     },
@@ -112,41 +114,25 @@ const Interests = () => {
   };
 
   return (
-    <div
-      name="interests"
-      className="min-h-screen w-full bg-gradient-to-b from-neutral-950 to-gray-800 text-slate-50 flex justify-center items-center overflow-y-scroll"
-    >
-      <div className="flex flex-col justify-center w-full p-4 max-w-screen-lg my-10 mx-auto">
-        <div className="mt-6">
-          <h2 className="text-2xl sm:text-4xl font-bold inline border-b-4 border-slate-50">
-            Interests
-          </h2>
-        </div>
-  
-        <div className="flex mt-10 items-center justify-center">
-          <div className="w-10/12">
-            <div className=" slider-container">
-              <Slider {...settings}>
-                {images.map(({ id, src, text }) => (
-                  <div key={id} className="flex flex-col items-center">
-                    <div className="">
-                      <img
-                        src={src}
-                        alt={`Image ${id + 1}`}
-                        className="rounded-xl"
-                      />
-                    </div>
-                    <p className="text-justify text-sm sm:text-base mb-2 mt-4">
-                      {text}
-                    </p>
-                  </div>
-                ))}
-              </Slider>
+    <div>
+      <div className="slider-container">
+        <Slider {...settings}>
+          {images.map(({ id, src, text }) => (
+            <div key={id} className="flex flex-col items-center">
+              <div className="pr-4">
+                <img
+                  src={src}
+                  alt={`Image ${id + 1}`}
+                  className="rounded-xl "
+                />
+              </div>
+              <div className="slide-content text-justify my-2">{text}</div>
             </div>
-          </div>
-        </div>
+          ))}
+        </Slider>
       </div>
     </div>
   );
-                }  
-export default Interests;
+};
+
+export default ImageSlider;

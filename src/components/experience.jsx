@@ -110,19 +110,19 @@ const Experience = () => {
   return (
     <div
       id="experience"
-      className="min-h-screen w-full flex bg-gradient-to-b from-neutral-950 to-gray-800 text-slate-50 justify-center items-center"
+      className="min-h-screen w-full flex bg-gradient-to-b mx-auto from-neutral-950 to-gray-800 text-slate-50 justify-center items-center overflow-y-scroll "
     >
-      <div className="max-w-screen-lg px-4 flex flex-col justify-center w-full h-full">
-        <div className="mt-0 sm:mt-4 md:mt-6">
-          <p className="text-2xl sm:text-4xl font-bold  inline border-b-4 mb-4 border-slate-50">
+      <div className="max-w-screen-lg px-4 my-10 flex flex-col justify-center w-full h-full">
+        <div className="mb-4">
+          <p className="text-2xl sm:text-4xl font-bold  inline border-b-4 border-slate-50">
             Experience
           </p>
         </div>
-        <p className="my-4 md:my-4 text-sm md:text-base">
+        <p className="my-2 text-sm md:text-base">
           These are the technologies that I have worked with in my career:
         </p>
 
-        <div className="w-full mt-2 grid grid-cols-2 sm:grid-cols-3 gap-6 sm:gap-8 text-center px-12 sm:px-0">
+        <div className="w-full mt-2 grid grid-cols-2 sm:grid-cols-3 gap-6 sm:gap-8 text-center items-center px-12 sm:px-0">
           {techs.map(({ id, title, src, style }) => (
             <div
               key={id}

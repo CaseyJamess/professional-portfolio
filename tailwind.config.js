@@ -19,5 +19,7 @@ export default {
       signature: "Dancing Script"
     }
   },
-  plugins: [],
+  plugins: [
+  
+]
 }

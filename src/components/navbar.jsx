@@ -33,7 +33,7 @@ function Navbar() {
   ];
 
   return (
-    <nav className="bg-neutral-950 z-10 flex justify-between my-auto items-center w-full h-8 py-2 md:h-16 sm:px-4 text-slate-50 fixed">
+    <nav className="bg-neutral-950 z-10 flex justify-between my-auto items-center w-full h-9 py-2 md:h-16 sm:px-4 text-slate-50 fixed">
       <div className="text-lg font-signature font-bold ml-2 sm:text-2xl lg:text-4xl">
         Casey McArdle
       </div>

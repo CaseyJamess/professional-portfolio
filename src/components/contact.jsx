@@ -4,16 +4,16 @@ function Contact() {
   return (
     <div
       name="contact"
-      className="min-h-screen w-full bg-gradient-to-b from-neutral-950 to-gray-800 text-slate-50 flex justify-center items-center"
+      className="min-h-screen w-full bg-gradient-to-b from-neutral-950 to-gray-800 text-slate-50 flex justify-center items-center overflow-y-scroll"
     >
-      <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto w-full">
-        <div className="mt-24 md:mt-4 lg:mt-0">
+      <div className="flex flex-col p-4 my-10 justify-center max-w-screen-lg mx-auto w-full">
+        <div className="my-2">
           <p className="text-2xl sm:text-4xl font-bold inline border-b-4 border-slate-50">
             Contact
           </p>
 
           <div className="mt-4 text-sm md:text-base justify-center items-center text-justify">
-            <p className="mb-4">
+            <p className="mb-2">
               I'm interested in full-time as well as free-lance opportunities
             </p>
             <p className="mb-4">

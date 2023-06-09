@@ -23,14 +23,14 @@ const Portfolio = () => {
       className="min-h-screen w-full flex justify-center items-center bg-gradient-to-b from-neutral-950 to-gray-800 text-slate-50"
     >
       <div className="max-w-screen-lg w-full p-4 mx-auto">
-        <div className=" pb-8 mt-0">
-          <h2 className="text-2xl sm:text-4xl font-bold inline border-b-4">
+        <div className="mb-4">
+          <h2 className="text-2xl sm:text-4xl font-bold inline border-b-4 border-slate-50">
             Portfolio
           </h2>
-          <p className="my-2  text-xl">Check out some of my work right here:</p>
+          <p className="my-4 text-sm sm:text-base ">Check out some of my work right here:</p>
         </div>
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 px-2 sm:px-0">
+        <div className="grid mt-2 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 px-2 sm:px-0">
           {portfolios.map(({ id, src, href, href2 }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <img

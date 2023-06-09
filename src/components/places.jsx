@@ -68,7 +68,9 @@ const Places = () => {
   }, []);
 
   return (
-    <div id="map" className="h-32 sm:w-auto md:h-44 lg:h-56 2xl:h-72 "></div>
+    <div>
+    <div id="map" className="h-32 sm:w-auto md:h-44 lg:h-56 2xl:h-80 "></div>
+    </div>
   );
 };
 
