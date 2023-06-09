@@ -42,10 +42,9 @@ const About = () => {
               Protec Fire Detection, where manufactured products undergo PAT
               testing and programming. Leveraging cutting-edge web technologies,
               I meticulously crafted user-friendly interfaces that
-              revolutionized the compliance/PAT testing and programming
-              processes. These interfaces streamlined the testing and
+              revolutionised the entire test procedure. These interfaces streamlined the testing and
               programming of manufactured products, resulting in remarkable
-              improvements in efficiency and reduced lead times.
+              improvements in efficiency and reduced lead times
             </p>
 
             <p className="mb-4">
@@ -57,7 +56,7 @@ const About = () => {
 
             <p className="mb-4">
               Feel free to check out my GitHub repositories - I would be
-              delighted to discuss new opportunities in software development.
+              delighted to discuss new opportunities in software development
               Let's connect!
             </p>
           </div>
