@@ -19,7 +19,7 @@ const Home = () => {
           </h5>
           <div className="text-xs md:text-base mx-auto text-justify mb-4">
             I have three years of experience building & designing software.
-            Currently, I love to work on web development, utilizing technologies
+            Currently, I love to work on web development, utilising technologies
             such as React & Tailwind CSS.
           </div>
           <div>
