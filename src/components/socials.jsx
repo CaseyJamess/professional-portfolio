@@ -2,6 +2,7 @@ import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
+import myCV from '../assets/CaseyMcArdleCV.pdf';
 
 const links = [
   {
@@ -39,7 +40,7 @@ const links = [
         Resume <BsFillPersonLinesFill size={30} />
       </>
     ),
-    href: "./src/assets/CaseyMcArdleCV.pdf",
+    href: myCV,
     style: "rounded-br-md",
     download: true,
   },
