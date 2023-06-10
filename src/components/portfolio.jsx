@@ -20,7 +20,7 @@ const Portfolio = () => {
   return (
     <div
       name="portfolio"
-      className="min-h-screen w-full flex justify-center items-center bg-gradient-to-b from-neutral-950 to-gray-800 text-slate-50"
+      className="min-h-screen w-full flex justify-center items-center bg-gradient-to-b from-neutral-950 to-gray-900 text-slate-50"
     >
       <div className="max-w-screen-lg w-full p-4 mx-auto">
         <div className="mb-4">

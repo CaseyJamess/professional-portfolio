@@ -18,16 +18,18 @@ function Navbar() {
       id: 2,
       link: "portfolio",
     },
+    /*
     {
       id: 3,
       link: "experience",
     },
+    */
     {
-      id: 4,
+      id: 3,
       link: "interests",
     },
     {
-      id: 5,
+      id: 4,
       link: "contact",
     },
   ];

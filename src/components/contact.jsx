@@ -4,7 +4,7 @@ function Contact() {
   return (
     <div
       name="contact"
-      className="min-h-screen w-full bg-gradient-to-b from-neutral-950 to-gray-800 text-slate-50 flex justify-center items-center overflow-y-scroll"
+      className="min-h-screen w-full bg-gradient-to-b from-neutral-950 to-gray-900 text-slate-50 flex justify-center items-center overflow-y-scroll"
     >
       <div className="flex flex-col p-4 my-10 justify-center max-w-screen-lg mx-auto w-full">
         <div className="my-2">

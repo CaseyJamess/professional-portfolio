@@ -15,7 +15,6 @@ function App() {
       <Socials/>
       <About/>
       <Portfolio/>
-      <Experience/>
       <Interests/>
       <Contact/>
     </div>

@@ -114,7 +114,7 @@ const Interests = () => {
   return (
     <div
       name="interests"
-      className="min-h-screen w-full bg-gradient-to-b from-neutral-950 to-gray-800 text-slate-50 flex justify-center items-center overflow-y-scroll"
+      className="min-h-screen w-full bg-gradient-to-b from-neutral-950 to-gray-900 text-slate-50 flex justify-center items-center overflow-y-scroll"
     >
       <div className="flex flex-col justify-center w-full p-4 max-w-screen-lg my-10 mx-auto">
         <div className="mt-6">

@@ -4,10 +4,10 @@ const About = () => {
   return (
     <div
       name="about"
-      className="min-h-screen w-full flex bg-gradient-to-b from-neutral-950 to-gray-800 text-slate-50 justify-center items-center overflow-y-scroll"
+      className="min-h-screen w-full flex bg-gradient-to-b from-neutral-950 to-gray-900 text-slate-50 justify-center items-center overflow-y-scroll"
     >
       <div className="flex flex-col p-4 my-10 justify-center text-justify max-w-screen-lg mx-auto h-full">
-        <div className="mb-4">
+        <div className="mb-4 mt-10">
           <h2 className="text-2xl sm:text-4xl font-bold inline border-b-4 border-slate-50">
             About
           </h2>
@@ -22,7 +22,7 @@ const About = () => {
             </p>
 
             <p className="mb-4">
-              Alongside my successful engineering career, I have continuously
+              Alongside my engineering career, I have continuously
               expanded my skills in software development. Through exploration of
               various programming languages and frameworks, I have developed a
               solid technical foundation
