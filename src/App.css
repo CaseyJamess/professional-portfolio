@@ -1,20 +1,172 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
 
-.slick-dots li button:before {
-  @apply text-white;
-}
-  
-@layer base{
-    html{
 
-    font-family: 'Raleway', sans-serif, 'Tahoma';
-    }
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black; /* Set the initial background color */
 }
 
+
+.text-container {
+  position: relative;
+  display: inline-block;
+}
+
+.animated-text {
+  position: relative;
+  display: inline-block;
+  font-size: 3rem;
+  padding: 0.5rem 1rem;
+  color: white;
+  animation: background-scroll-animation 10s linear infinite;
+  background: url("your-image.jpg") repeat-x;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@keyframes background-scroll-animation {
+  0% {
+    background-position: 0% 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+@keyframes animateStroke {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+@keyframes myAnimation {
+  0% {
+    fill: blue;
+    transform: scale(1);
+  }
+  50% {
+    fill: red;
+    transform: scale(1.5);
+  }
+  100% {
+    fill: blue;
+    transform: scale(1);
+  }
+}
+
+.bullet {
+  width: 0.5rem;
+  height: 0.5rem;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+}
+
+.flex::before {
+  content: "";
+  width: 2px;
+  height: 100%;
+  background-color: currentColor;
+  margin-right: 0.5rem;
+}
+
+
+button:hover span::before {
+  width: 100%;
+}
+
+
+#myCircle {
+  animation: myAnimation 2s infinite;
+}
+
+#caseySVG path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: animateStroke 2s ease forwards;
+}
+
+#mcardleSVG {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+}
+
+.wave-head-dark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.wave-head-dark svg {
+  position: relative;
+  display: block;
+  width: calc(131% + 1.3px);
+  height: 140px;
+}
+
+.wave-head-dark .shape-fill {
+  fill: #171717;
+}
+
+.wave-head-light {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.wave-head-light svg {
+  position: relative;
+  display: block;
+  width: calc(131% + 1.3px);
+  height: 145px;
+}
+
+.wave-head-light .shape-fill {
+  fill: #fafafa;
+}
+.link-underline {
+  border-bottom-width: 0;
+  background-image: linear-gradient(transparent, transparent),
+    linear-gradient(#fff, #fff);
+  background-size: 0 3px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.3s ease-in-out;
+}
+
+.link-underline-black {
+  background-image: linear-gradient(transparent, transparent),
+    linear-gradient(#ffffff, #ffffff);
+}
+
+.link-underline:hover {
+  background-size: 100% 3px;
+  background-position: 0 100%;
+}
+
+@layer base {
+  html {
+    font-family: 'Helvetica neue', sans-serif;
+  }
+}
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-

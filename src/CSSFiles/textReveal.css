@@ -1,0 +1,17 @@
+/* Define the animation keyframes */
+@keyframes revealLeftToRight {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Apply the animation to the elements with the "reveal" class */
+  .text-reveal {
+    animation: revealLeftToRight 1s ease-in-out forwards;
+  }
+  

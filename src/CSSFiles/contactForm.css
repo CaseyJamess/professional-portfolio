@@ -1,0 +1,76 @@
+.input-group {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.input-group input,
+.input-group textarea {
+  padding: 1rem;
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  color: #fafafa;
+  outline: none;
+  border-bottom: 1px solid #7f7f7f;
+  transition: border-color 0.3s ease; /* Add transition for border color */
+}
+
+.placeholder-label {
+  position: absolute;
+  z-index: 5;
+  top: 1.5rem;
+  left: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  opacity: 0.5;
+  color: #fafafa;
+}
+
+.input-group.focused .placeholder-label,
+.input-group input:focus + .placeholder-label,
+.input-group textarea:focus + .placeholder-label,
+.input-group input:not(:placeholder-shown) + .placeholder-label,
+.input-group textarea:not(:placeholder-shown) + .placeholder-label {
+  top: 0;
+  font-size: 0.625rem;
+  opacity: 1;
+}
+
+.input-group.focused input,
+.input-group.focused textarea {
+  box-shadow: 0 0 0 2px #fafafa;
+  padding-top: 2rem;
+  border-bottom: none;
+}
+
+.input-group.focused input::placeholder,
+.input-group.focused textarea::placeholder {
+  color: #fafafa;
+}
+
+.input-group.focused input::placeholder,
+.input-group.focused textarea::placeholder {
+  opacity: 1;
+}
+
+.input-group input:not(:placeholder-shown),
+.input-group textarea:not(:placeholder-shown) {
+  border-color: #7f7f7f;
+}
+
+.input-group.green-border input:not(:placeholder-shown),
+.input-group.green-border textarea:not(:placeholder-shown) {
+  border-color: #42f311;
+}
+
+.input-group.focused input:not(:placeholder-shown),
+.input-group.focused textarea:not(:placeholder-shown) {
+  border-color: #fafafa;
+  padding-top: 1rem; /* Adjust the padding to avoid box growth */
+  padding-bottom: 1rem; /* Adjust the padding to avoid box growth */
+}
+
+.input-group.focused.green-border input:not(:placeholder-shown),
+.input-group.focused.green-border textarea:not(:placeholder-shown) {
+  border-color: #42f311;
+}
