@@ -74,7 +74,7 @@ function ProjectsHome() {
                 <img
                   src={theWeatherman}
                   alt="weatherman"
-                  className="opacity-60 hover:opacity-100  h-auto duration-1000 cursor-pointer"
+                  className=" opacity-80 xl:opacity-60 xl:hover:opacity-100  h-auto duration-1000 cursor-pointer"
                 />
               </Link>
               <div className="absolute mt-6 items-center  md:rotate-90 flex flex-row md:top-32 md:right-0 whitespace-nowrap">
@@ -120,7 +120,7 @@ function ProjectsHome() {
               <img
                 src={Wilpshire}
                 alt="Wilpshire"
-                className="opacity-60 hover:opacity-100 h-auto duration-1000 cursor-pointer"
+                className="opacity-80 xl:opacity-60 xl:hover:opacity-100 h-auto duration-1000 cursor-pointer"
               />
 
               <div className="absolute mt-6 items-center  md:rotate-90 flex flex-row md:top-28 md:left-0 whitespace-nowrap">
