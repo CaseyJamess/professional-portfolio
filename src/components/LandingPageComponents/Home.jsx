@@ -28,13 +28,13 @@ const Home = () => {
   }, []);
 
   return (
-    <div>
+
       <div
         name="Home"
         className="min-h-screen w-full bg-hero-pattern bg-cover bg-center text-ice flex flex-col "
       >
         <div className="relative flex flex-col my-auto">
-          <div className="my-10 flex flex-col mx-5 max-w-screen-xl xl:mx-auto sm:flex-row items-center justify-center relative">
+          <div className="flex flex-col mx-5 max-w-screen-xl xl:mx-auto sm:flex-row items-center justify-center relative">
             <div className="flex flex-col justify-center items-start lg:mr-60 max-w-sm lg:max-w-lg mt-10 sm:mt-0 relative">
               <h2 className="text-4xl md:text-5xl lg:text-6xl  font-bold my-3 relative">
                 {trail.map((props, index) => (
@@ -88,7 +88,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-    </div>
   );
 };
 
